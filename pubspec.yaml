@@ -7,6 +7,10 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  cached_network_image: ^2.2.0+1  # 加载缓存的图片
+  transparent_image: ^1.0.0
+  image_picker: ^0.6.7+1
+  url_launcher: '>=5.4.0 <6.0.0'
   flutter_color_plugin: ^0.0.2
   flutter:
     sdk: flutter
@@ -19,6 +23,19 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+fonts:
+   - family: Roboto
+     fonts:
+       - asset: fonts/Roboto-Regular.ttf
+       - asset: fonts/Roboto-Italic.ttf
+         style: italic
+   - family: Lato
+     fonts:
+      - asset: fonts/Lato-Regular.ttf
+      - asset: fonts/Lato-Italic.ttf
+        style: italic
+
 
   # To add assets to your application, add an assets section, like this:
   # assets:

@@ -19,7 +19,7 @@ class _FlutterLayoutPageState extends State<FlutterLayoutPage> {
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text('statefullWidget与基础组件'),
+          title: Text('flutter布局'),
           leading: GestureDetector(
             onTap: () {
               Navigator.pop(context);
