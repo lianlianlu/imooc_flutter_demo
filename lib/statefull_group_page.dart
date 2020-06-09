@@ -9,7 +9,7 @@ class _StateFullGroupPageState extends State<StateFullGroupPage> {
   int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
-    TextStyle textStyle = TextStyle(fontSize: 20);
+    // TextStyle textStyle = TextStyle(fontSize: 20);
     return MaterialApp(
       title: '如何使用插件和包',
       theme: ThemeData(

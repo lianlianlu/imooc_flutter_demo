@@ -10,7 +10,7 @@ class _FlutterLayoutPageState extends State<FlutterLayoutPage> {
   int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
-    TextStyle textStyle = TextStyle(fontSize: 20);
+    // TextStyle textStyle = TextStyle(fontSize: 20);
     return MaterialApp(
       title: '如何使用插件和包',
       theme: ThemeData(
@@ -187,10 +187,10 @@ class _FlutterLayoutPageState extends State<FlutterLayoutPage> {
     );
   }
 
-  Future<Null> _handleRefresh() async {
-    await Future.delayed(Duration(seconds: 1));
-    return null;
-  }
+//  Future<Null> _handleRefresh() async {
+//    await Future.delayed(Duration(seconds: 1));
+//    return null;
+//  }
 
   _item(String title, Color color) {
     return Container(

@@ -5,6 +5,11 @@ import 'package:imoocflutterdemo/flutter_widget_lifecycle.dart';
 import 'package:imoocflutterdemo/gesture_page.dart';
 import 'package:imoocflutterdemo/launch_page.dart';
 import 'package:imoocflutterdemo/less_group_page.dart';
+import 'package:imoocflutterdemo/no6/animation_logo.dart';
+import 'package:imoocflutterdemo/no6/animation_logo_2.dart';
+import 'package:imoocflutterdemo/no6/animation_page.dart';
+import 'package:imoocflutterdemo/no6/hero_animation.dart';
+import 'package:imoocflutterdemo/no6/hero_animation_horizontal.dart';
 import 'package:imoocflutterdemo/no6/image_page.dart';
 import 'package:imoocflutterdemo/photo_app_page.dart';
 import 'package:imoocflutterdemo/plugin_use.dart';
@@ -67,6 +72,12 @@ class _DynamicThemeState extends State<DynamicTheme> {
         'app_life': (BuildContext context) => AppLifecycle(),
         'photo_app': (BuildContext context) => PhotoApp(),
         'image': (BuildContext context) => ImagePage(),
+        'logo_app': (BuildContext context) => LogoApp(),
+        'AnimatedWidgetLogoApp': (BuildContext context) =>
+            AnimatedWidgetLogoApp(),
+        'AnimationLogo2': (BuildContext context) => AnimationLogo2(),
+        'hero': (BuildContext context) => HeroAnimation(),
+        'hero_demo': (BuildContext context) => RadialExpansionDemo(),
       },
     );
   }
@@ -105,7 +116,13 @@ class _RouteNavigatortate extends State<RouteNavigator> {
         _item('页面生命周期', WidgetLifecycle(), 'life'),
         _item('APP应用生命周期', AppLifecycle(), 'app_life'),
         _item('【实战】拍照APP开发', PhotoApp(), 'photo_app'),
-        _item('图片设置', ImagePage(), 'image'),
+        _item('图片片设置', ImagePage(), 'image'),
+        _item('动画 普通使用', LogoApp(), 'logo_app'),
+        _item('AnimatedWidget 动画使用 ', AnimatedWidgetLogoApp(),
+            'AnimatedWidgetLogoApp'),
+        _item('AnimatedBuilder 动画使用 ', AnimationLogo2(), 'AnimationLogo2'),
+        _item('Hero 动画', HeroAnimation(), 'hero'),
+        _item('Hero demo', RadialExpansionDemo(), 'hero_demo'),
       ]),
     );
   }
