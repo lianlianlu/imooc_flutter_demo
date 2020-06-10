@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:imoocflutterdemo/no7/pages/home_page.dart';
-import 'package:imoocflutterdemo/no7/pages/my_page.dart';
-import 'package:imoocflutterdemo/no7/pages/search_page.dart';
-import 'package:imoocflutterdemo/no7/pages/travel_page.dart';
+import 'package:imoocflutterdemo/no11/pages/home_page.dart';
+import 'package:imoocflutterdemo/no11/pages/my_page.dart';
+import 'package:imoocflutterdemo/no11/pages/search_page.dart';
+import 'package:imoocflutterdemo/no11/pages/travel_page.dart';
 
 class TabNavigator extends StatefulWidget {
   @override

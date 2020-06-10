@@ -12,26 +12,29 @@ class _MyPageState extends State<MyPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          title: Text('测试'),
+        ),
         body: Column(
-      children: [
-        RaisedButton(
-          onPressed: _incrementCounter,
-          child: Text('increment count'),
-        ),
-        RaisedButton(
-          onPressed: _getCounter,
-          child: Text('get counter'),
-        ),
-        Text(
-          countString,
-          style: TextStyle(fontSize: 20),
-        ),
-        Text(
-          localCount,
-          style: TextStyle(fontSize: 20),
-        )
-      ],
-    ));
+          children: [
+            RaisedButton(
+              onPressed: _incrementCounter,
+              child: Text('increment count'),
+            ),
+            RaisedButton(
+              onPressed: _getCounter,
+              child: Text('get counter'),
+            ),
+            Text(
+              countString,
+              style: TextStyle(fontSize: 20),
+            ),
+            Text(
+              localCount,
+              style: TextStyle(fontSize: 20),
+            )
+          ],
+        ));
   }
 
   _incrementCounter() async {
